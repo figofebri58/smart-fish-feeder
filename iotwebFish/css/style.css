@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+header{
+    background:#1f4e79;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+}
+
+.logo-box img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.header-text{
+    text-align:center;
+}
+
+.container{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.weight{
+    font-size:48px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.status{
+    margin-top:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.stock-good{
+    color:green;
+    margin-top:10px;
+}
+
+.stock-warning{
+    color:orange;
+}
+
+.stock-danger{
+    color:red;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.add-btn{
+    background:#2196F3;
+    color:white;
+}
+
+button{
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.feed-btn{
+    background:#28a745;
+    color:white;
+}
+
+.schedule-card{
+    background:#eef4ff;
+    margin-top:12px;
+    padding:15px;
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.schedule-actions button{
+    margin-left:5px;
+}
+
+.edit-btn{
+    background:#ffc107;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    background:#1f4e79;
+    color:white;
+}
+
+.pagination{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    background:white;
+    width:320px;
+    padding:20px;
+    border-radius:10px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.modal-content input{
+    width:100%;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:10px;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .section-title{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .weight{
+        font-size:32px;
+    }
+}
+    .manual-feed-container{
+    margin-top:15px;
+    margin-bottom:20px;
+    }
+
+    .manual-feed-container label{
+        display:block;
+        margin-bottom:10px;
+        font-weight:bold;
+    }
+
+    #servoAngle{
+
+        width:100%;
+
+        padding:12px;
+
+        border:1px solid #ccc;
+
+        border-radius:10px;
+
+        font-size:16px;
+
+        background:white;
+
+    }
